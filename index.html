@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock, Paper, Scissors</h1>
+        <div class="scoreboard">
+            <div class="score">
+                <span class="label">Player:</span>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score">
+                <span class="label">Computer:</span>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+        <div class="game-area">
+            <div class="choice-display">
+                <h2>Your Choice</h2>
+                <div id="player-choice" class="choice"></div>
+            </div>
+            <div class="choice-display">
+                <h2>Computer's Choice</h2>
+                <div id="computer-choice" class="choice"></div>
+            </div>
+        </div>
+        <div class="choices">
+            <button class="choice-btn" data-choice="rock">🪨 Rock</button>
+            <button class="choice-btn" data-choice="paper">📜 Paper</button>
+            <button class="choice-btn" data-choice="scissors">✂️ Scissors</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <p id="fun-fact"></p>
+            <button id="play-again">Play Again?</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
